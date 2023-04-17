@@ -1,14 +1,39 @@
 [tool.poetry]
 name = "flake8-limdown"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "The Experimental project to pubish something in pipi"
 authors = ["Prasanna Limaye <prasannalimaye@gmail.com>"]
+license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/limshark/flake8-limdown"
+repository = "https://github.com/limshark/flake8-limdown"
+keywords = ["flake8", "markdown", "lint"]
+classifiers = [
+	"Environment :: Console",
+	"Framework :: Flake8",
+	"Operating System :: OS Independent",
+	"Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+include = [
+    "LICENSE",
+]
 packages = [{include = "flake8_limdown"}]
+
 
 [tool.poetry.dependencies]
 python = "^3.11"
+flake8 = "^6.0.0"
 
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+
+# New scripts
+[tool.poetry.scripts]
+flake8-limdown = 'flake8_limdown:main'
 
 [build-system]
 requires = ["poetry-core"]
