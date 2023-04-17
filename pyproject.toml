@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "flake8-limdown"
+version = "0.1.0"
+description = ""
+authors = ["Prasanna Limaye <prasannalimaye@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flake8_limdown"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
